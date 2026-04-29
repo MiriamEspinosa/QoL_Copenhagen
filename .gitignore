@@ -1,0 +1,15 @@
+# pixi environments
+.pixi/
+!.pixi/config.toml
+pixi.lock
+pixi.toml
+
+# ipynb checkpoints
+.ipynb_checkpoints/
+
+# .vscode settings
+.vscode/
+
+# Lecture notebooks for inspiration
+notebooks/lectures_and_exercises/
+
