@@ -4,6 +4,9 @@
 pixi.lock
 pixi.toml
 
+# json cache files
+cache/
+
 # ipynb checkpoints
 .ipynb_checkpoints/
 
