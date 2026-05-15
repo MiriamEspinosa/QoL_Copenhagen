@@ -1,22 +1,51 @@
 # GeoSpatial_DS
 Source code for Geospatial Data Science - Exam Project, Spring 2026
 
----
-## Important Instalation Notes
+## Contributors 
+Caroline Sofie Skovby (cssk@itu.dk) & Miriam Espinosa Solana (miri@itu.dk)
 
-We are using a pixi env. 
-1. Install Pixi on your machine
-Follow the installation guideline at: https://pixi.prefix.dev/latest/installation/
-Pixi is a package management tool like conda, but much faster.
+## Important Note 
 
-2. Create Pixi workspace and environment for the course
-Navigate to whatever directory you want to use for the course. Place the gds_py.yml file there. Open a terminal window in that directory and execute "pixi init --import gds_py.yml". This sets up a Pixi workspace and environment in that directory, with all the dependencies that you need for the course.
+There was a bug in git from the 22/4 to 29/4 where it would say that code was co-authored by Copilot, even though it wasn't and the user had disabled AI features. This is why it appears that one of our commits used AI, even though we did NOT. Source: https://github.com/microsoft/vscode/issues/314311
 
-3. Install dependencies and start Jupyter Lab
-In the same terminal window, execute "pixi run jupyter lab". The first time you do this, it may take several minutes, since Pixi has to install all the dependencies. After Pixi is finished, an instance of Jupyter lab is automatically going to open in your browser. 
+## Environment 
+We are using a pixi environment like the one used in class. 
 
-    Pixi will place a pixi.lock and a pixi.toml file in that folder. Keep those files, as they will allow you to restart the environment fast next time you need it, via "pixi run jupyter lab".
+## Data folder structure
 
+The `data/` directory contains raw, intermediate, and cleaned geospatial and tabular datasets used in the project.
 
-4. Test requirements
-Try to run all of the test_gdspy_install.ipynb notebook (this is under .ipiynb_checkpoints). There could be a bunch of warnings thrown, for example in red cells, but as long as you arrive at the last cell without interruption you are good to go!
+```
+data/
+├── buildings_copenhagen/
+│   ├── buildings.*
+│   └── buildings_within_city.*
+│
+├── buildings_denmark/ # extracted from geoFabrik
+│   └── gis_osm_buildings_a_free_1.*
+│
+├── clean_data/
+│   ├── accommodation.gpkg
+│   ├── air_quality.gpkg
+│   ├── buildings.gpkg
+│   ├── bus_stops.gpkg
+│   ├── clinic.gpkg
+│   ├── green_areas.gpkg
+│   ├── hospital.gpkg
+│   ├── qol_index.gpkg
+│   ├── schools.gpkg
+│   ├── train_stations.gpkg
+│   ├── transport.gpkg
+│   └── voting_areas.gpkg
+│
+├── copenhagen_boundaries/
+│   └── boundaries.*
+│
+└── raw_data/
+    ├── CAV_25May2021.geojson
+    ├── employment.xlsx
+    ├── population_district.xlsx
+    ├── unemployment.xlsx
+    └── voting_areas.gpkg
+
+´´´
