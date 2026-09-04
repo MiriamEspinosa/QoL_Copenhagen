@@ -46,9 +46,9 @@ The `data/` directory contains raw, intermediate, and cleaned geospatial and tab
 
 ## Results 
 ### QoL Index 
-![alt text](QoL.png)
+![alt text](figures/QoL.png)
 
-![alt text](3.png)
+![alt text](figures/3.png)
 
 The three different choropleth maps in Figure 2, show the QoL index from different granularity levels. The fist one (a), plots the results obtained looking at each building. The second one (b), shows the mean values after aggregating based on the hexagonal grid. The last one (c), shows the aggregation based on voting areas from Copenhagen and Frederiksberg municipalities. This index is ranged from 1 to 5, where 5 represents a higher QoL index. 
 
@@ -57,7 +57,7 @@ We observe higher scores in the central areas. Despite being spatially close, th
 In order to understand better how this values were obtained, we have analyzed the score for each of the distance metrics separately (see Figure \ref{fig_indicators}). Based on the combination of both analysis, we can see a correlation between areas close to a hospital and a high QoL score. It is also relevant to notice that the north west area of Copenhagen, not only does not have a hospital close, but also is far from clinics, train stations and schools. This explains the results obtained and the difference between this area and the city center. 
 
 ### Global Spatial Autocorrelation 
-![alt text](4.png)
+![alt text](figures/4.png)
 
 We use Moran's I to investigate whether there is a significant spatial pattern in the QoL indices.
 
@@ -72,7 +72,7 @@ Moran's I summarizes the distribution for a spatial dataset, indicating if the s
 
 ### Local Spatial Autocorrelation 
 
-![alt text](5.png)
+![alt text](figures/5.png)
 
 Based on the results from the global spatial autocorrelation, where we observed a pattern in how QoL indices are clustered in space,
 we look into clusters' locations and whether they are significant on a local level.
@@ -83,7 +83,7 @@ Therefore, the majority of hexagons have a low local Moran's I, meaning they do 
 
 To further investigate this, we used Local Indicators of Spatial Association (LISA), which delegates the hexagons into one of four quadrants: high values surrounded by high values (HH), low values surrounded by low values (LL), high values surrounded by low values (HL), and low values that are surrounded by high values (LH). 
 
-![alt text](6.png)
+![alt text](figures/6.png)
 
 ## Discussion and Conclusion
 
