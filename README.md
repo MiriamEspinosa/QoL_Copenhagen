@@ -1,4 +1,4 @@
-# GeoSpatial_DS
+# Quality of Life in Copenhagen
 Source code for Geospatial Data Science - Exam Project, Spring 2026
 
 ## Contributors 
